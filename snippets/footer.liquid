@@ -1,9 +1,11 @@
 <footer class="site-footer small--text-center" role="contentinfo">
-
   <div class="wrapper">
-
     <div class="grid">
-
+        <div class="grid-item medium--one-half large--three-twelfths">
+            <a href="{{ '/' | absolute_url }}" itemprop="url">
+                <img alt="{{ shop.name }}" src="{{ 'images/logo.png' | asset_url }}" itemprop="logo" />
+            </a>
+        </div>
       {% if settings.footer_quicklinks_enable %}
         <div class="grid-item medium--one-half large--three-twelfths">
           <h3>{{ 'layout.footer.quick_links' | t }}</h3>

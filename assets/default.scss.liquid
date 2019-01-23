@@ -2184,12 +2184,19 @@ $shareBorderColor: #ececec;
   #Site Header
 ==============================================================================*/
 .site-header {
-  padding: $gutter/2 0;
+  padding: 10px 0;
   background-color: $headerBackground;
   color: $headerText;
 
+  a {
+    color: $headerText;
+  }
+  a:hover {
+    color: $headerText;
+  }
+
   @include at-query ($min, $large) {
-    padding: $gutter 0;
+    padding: 10px 0;
   }
 
   .site-header--text-links a {
@@ -2251,7 +2258,7 @@ $shareBorderColor: #ececec;
 
 .site-header--meta-links {
   display: inline-block;
-  margin-left: $gutter/2;
+  margin: 0 15px;
 }
 
 .site-header--spacer {
@@ -2319,8 +2326,7 @@ $shareBorderColor: #ececec;
 
 .search-bar {
   position: relative;
-  max-width: 40%;
-  width: 100%;
+  width: 60%;
   margin: 0 auto $gutter;
 
   .icon-search {
@@ -2365,7 +2371,7 @@ $shareBorderColor: #ececec;
     cursor: pointer;
 
     .site-header & {
-      color: $headerText;
+      color: #999;
     }
   }
 
@@ -2415,6 +2421,10 @@ $shareBorderColor: #ececec;
   left: 0;
   right: 0;
   background-color: $colorNav;
+
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 
   a {
     color: $colorNavText;
