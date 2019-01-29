@@ -1348,7 +1348,7 @@ html input[disabled] {
 input.btn-secondary {
   @extend .btn;
   background-color: $colorBtnSecondary;
-  color: $colorTextBody;
+  color: #fff;
 
   &:hover {
     background-color: $colorBtnSecondaryHover;
@@ -1357,8 +1357,13 @@ input.btn-secondary {
 
   &:active {
    background-color: $colorBtnSecondaryActive;
-    color: $colorTextBody;
+    color: #fff;
   }
+}
+
+.has-counter {
+    padding: 10px;
+    position: relative;
 }
 
 /*================ Force an input/button to look like a text link ================*/
@@ -1828,10 +1833,9 @@ label.error {
 
   &:before {
     position: relative;
-    top: -2px;
     font-size: 19px;
     line-height: 12px;
-    vertical-align: middle;
+    vertical-align: baseline;
     margin-right: 6px;
   }
 }
@@ -2268,11 +2272,11 @@ $shareBorderColor: #ececec;
 .header-cart-btn {
   @extend .btn;
   position: relative;
-  line-height: 26px;
-  padding-bottom: 10px;
+  line-height: 1;
+  padding: 10px;
   border: 0 none;
   margin-left: $gutter/2;
-  vertical-align: top;
+  vertical-align: baseline;
   background-color: $headerButtonAndSearch;
   color: color-control($headerButtonAndSearch);
 
@@ -2295,7 +2299,7 @@ $shareBorderColor: #ececec;
   top: -5px;
   right: -5px;
   text-align: center;
-  background-color: $colorAccent;
+  background-color: #4da0f7;
   color: $headerBackground;
   font: {
     weight: 700;

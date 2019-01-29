@@ -499,7 +499,7 @@ select {
     }
 }
 .vc-compare-button {
-    color: #585858;
+    color: #fff;
     z-index:9999;
 }
 .disabled-compare-button {

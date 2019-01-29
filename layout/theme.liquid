@@ -18,6 +18,7 @@
     <base href="{{ '/' | absolute_url }}" />
 
     {{ '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' | stylesheet_tag }}
+    {{ 'ajaxify.scss.css' | asset_url | stylesheet_tag }}
     {{ 'default.scss.css' | asset_url | stylesheet_tag }}
     {{ 'bundle/styles.css' | static_asset_url | append_version | stylesheet_tag }}
 
@@ -30,6 +31,9 @@
     {{ 'bundle/scripts_dependencies.js' | static_asset_url | append_version | script_tag }}
     {{ 'bundle/scripts.js' | static_asset_url | append_version | script_tag }}
 
+    {{ 'shop.js' | asset_url | script_tag }}
+    {{ 'shopify_common.js' | asset_url | script_tag }}
+    {{ 'customer_area.js'  | asset_url | script_tag }}
     <script>
         var BASE_URL = '{{ "/" | full_url }}';
     </script>
@@ -58,7 +62,7 @@
                 {% if settings.product_compare_enabled %}
                     <product-compare-list-bar></product-compare-list-bar>
                 {% endif %}
-                <a href="{{ 'cart' | absolute_url }}" ng-controller="cartBarController">
+                <a class="has-counter" href="{{ 'cart' | absolute_url }}" ng-controller="cartBarController">
                     <span class="icon icon-cart"></span>
                     <span id="cartCount" ng-class="{ 'visible-count': cartItemsCount > 0 }" ng-bind="cartItemsCount" ng-cloak></span>
                 </a>
