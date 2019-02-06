@@ -53,10 +53,16 @@
                 <div class="grid-item large--two-third">
                     {% include 'search-bar' %}
                     <span class="site-header--meta-links medium-down--hide">
+                        <span ng-if="customer && customer.isRegisteredUser && customer.operatorUserName" ng-cloak>
+                            <a href="{{ 'account' | absolute_url }}" ng-bind="customer.firstName || customer.userName"></a> &middot; {{ 'layout.customer.log_out' | t | customer_logout_link }}
+                        </span>
+                        <span ng-if="customer && customer.isRegisteredUser && !customer.operatorUserName" ng-cloak>
+                            <a href="{{ 'account' | absolute_url }}" ng-bind="customer.firstName || customer.userName"></a> &middot; {{ 'layout.customer.log_out' | t | customer_logout_link }}
+                        </span>
                         <span ng-if="customer && !customer.isRegisteredUser" ng-cloak>
-                            {{ 'layout.customer.create_account' | t | customer_register_link }}
-                            <span class="site-header--spacer">{{ 'common.or' | t }}</span>
                             {{ 'layout.customer.sign_in' | t | customer_login_link }}
+                            <span class="site-header--spacer">{{ 'common.or' | t }}</span>
+                            {{ 'layout.customer.create_account' | t | customer_register_link }}
                         </span>
                     </span>
                 {% if settings.product_compare_enabled %}

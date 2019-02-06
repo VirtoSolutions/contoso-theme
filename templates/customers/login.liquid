@@ -22,15 +22,16 @@
         <input type="password" value="" name="customer[password]" id="customer_password" placeholder="{{ 'customer.login.password' | t }}" {% if form.errors contains "password" %} class="error" {% endif %}>
 
         <p>
+            <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
+        </p>
+
+        <p>
             <a href="{{ '/account/forgotlogin' | absolute_url }}">{{ 'customer.login.forgot_login' | t }}</a>
         </p>
         <p>
             <a href="{{ '/account/forgotpassword' | absolute_url }}">{{ 'customer.login.forgot_password' | t }}</a>
         </p>
 
-        <p>
-            <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
-        </p>
         {{ 'common.or' | t }} <a href="{{ '/' | absolute_url }}">{{ 'customer.login.cancel' | t }}</a>
 
         {% endform %}

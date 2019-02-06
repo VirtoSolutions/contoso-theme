@@ -1,4 +1,5 @@
 <div class="grid">
+    <div class="grid-item large--one-quarter" ng-if="cart.itemsCount === 0">&nbsp;</div>
     <div class="grid-item large--one-half">
         <p>{{ 'cart.general.quick_add_description' | t }}</p>
         <form class="input-group" name="formQuickAdd" novalidate="novalidate">
@@ -24,5 +25,6 @@
             </div>
         </form>
     </div>
+    <div class="grid-item large--one-quarter" ng-if="cart.itemsCount === 0">&nbsp;</div>
 </div>
 <hr />

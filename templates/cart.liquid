@@ -9,15 +9,18 @@
         <span>{{ 'cart.general.updating_cart_message' | t }}</span>
     </div>
 
-    <h1>{{ 'cart.general.title' | t }}</h1>
-    {% include 'quick-order-section' %}
-
-    <span ng-if="cart.itemsCount == 0" ng-cloak="">
+    <span ng-if="cart.itemsCount == 0" ng-cloak="" style="display: block; text-align: center;">
+        <img src="{{ 'empty-cart.png' | asset_url }}" />
         <h2>{{ 'cart.general.empty' | t }}</h2>
-        <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
+        <p>
+            <a class="btn" href="{{ '/' | absolute_url }}">Continue browsing</a>
+        </p>
+        <h2 style="color: #ccc;">or</h2>
+        {% include 'quick-order-section' %}
     </span>
 
     <div ng-show="cart.itemsCount > 0" ng-cloak="">
+        {% include 'quick-order-section' %}
         <div ng-init="setCartForm(formCart)"></div>
         <form name="formCart" novalidate="novalidate">
             <div class="cart-row" ng-repeat="lineItem in cart.items">
