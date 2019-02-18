@@ -49,7 +49,7 @@
       {% when 4 %}
         {% assign featured_collection_width = 'small--one-half one-quarter' %}
       {% when 5 %}
-        {% assign featured_collection_width = 'small--one-half medium--one-third large--one-fifth' %}
+        {% assign featured_collection_width = 'small--one-half medium--one-third large--one-quarter' %}
       {% when 6 %}
         {% assign featured_collection_width = 'small--one-half medium--one-third large--one-sixth' %}
     {% endcase %}
@@ -150,7 +150,7 @@
     {% if collections[featured_row].all_products_count == 0 %}
     <div class="section-header">
       <p class="h1">{{ 'homepage.featured_collection_rows.heading' | t }}</p>
-      <div class="section-header--right"> 
+      <div class="section-header--right">
         <a href="{{ collections[featured_row].url }}">{{ 'homepage.featured_collection_rows.more' | t }} &rsaquo;</a>
       </div>
     </div>
@@ -165,31 +165,31 @@
 
       <div class="grid-item">
         <div class="grid-uniform">
-          <div class="grid-item large--one-fifth medium--one-third text-center">
+          <div class="grid-item large--one-quarter medium--one-third text-center">
             <a href="admin/products" class="demo-image">
               {{ 'homepage.featured_collection_rows.add_a_product' | t }}
             </a>
             <p><a href="admin/products">{{ 'homepage.featured_collection_rows.example_product_title' | t }}</a> $19.99</p>
           </div>
-          <div class="grid-item large--one-fifth medium--one-third text-center">
+          <div class="grid-item large--one-quarter medium--one-third text-center">
             <a href="admin/products" class="demo-image">
               {{ 'homepage.featured_collection_rows.add_a_product' | t }}
             </a>
             <p><a href="admin/products">{{ 'homepage.featured_collection_rows.example_product_title' | t }}</a> $19.99</p>
           </div>
-          <div class="grid-item large--one-fifth medium--one-third text-center">
+          <div class="grid-item large--one-quarter medium--one-third text-center">
             <a href="admin/products" class="demo-image">
               {{ 'homepage.featured_collection_rows.add_a_product' | t }}
             </a>
             <p><a href="admin/products">{{ 'homepage.featured_collection_rows.example_product_title' | t }}</a> $19.99</p>
           </div>
-          <div class="grid-item large--one-fifth medium--one-third text-center">
+          <div class="grid-item large--one-quarter medium--one-third text-center">
             <a href="admin/products" class="demo-image">
               {{ 'homepage.featured_collection_rows.add_a_product' | t }}
             </a>
             <p><a href="admin/products">{{ 'homepage.featured_collection_rows.example_product_title' | t }}</a> $19.99</p>
           </div>
-          <div class="grid-item large--one-fifth medium--one-third text-center">
+          <div class="grid-item large--one-quarter medium--one-third text-center">
             <a href="admin/products" class="demo-image">
               {{ 'homepage.featured_collection_rows.add_a_product' | t }}
             </a>

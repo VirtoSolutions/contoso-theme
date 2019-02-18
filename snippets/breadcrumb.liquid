@@ -2,23 +2,23 @@
 <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
   <a href="{{ "/" | absolute_url }}" title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
   {%- if template contains 'vendor' -%}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
     <span class="breadcrumb--truncate">{{ vendor.name }}</span>
   {%- elsif template contains 'product' -%}
-    {%- if collection -%}   
+    {%- if collection -%}
       {%- for parent in collection.parents -%}
-         <span class="divider" aria-hidden="true">&rsaquo;</span>
+         <span class="divider" aria-hidden="true">/</span>
         {%- capture url -%}{{ parent.handle | absolute_url }}{%- endcapture -%}
         {{ parent.title | link_to: url }}
-      {%- endfor -%}     
+      {%- endfor -%}
     {%- endif -%}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
     <span class="breadcrumb--truncate">{{ product.title }}</span>
   {%- elsif template contains 'collection' and collection.handle -%}
     {%- if current_tags -%}
       {%- capture url -%}{{ collection.handle | absolute_url }}{%- endcapture -%}
       {{ collection.title | link_to: url }}
-      <span class="divider" aria-hidden="true">&rsaquo;</span>
+      <span class="divider" aria-hidden="true">/</span>
       {%- comment -%}
         Loop through tags and our custom tag array to strip out prepended tag categories if they exist.
         snippet/advanced-tag-loop.liquid is required for this to work.
@@ -50,35 +50,35 @@
     {%- else -%}
       {%- for parent in collection.parents -%}
         {%- unless parent.title == collection.title -%}
-          <span class="divider" aria-hidden="true">&rsaquo;</span>
+          <span class="divider" aria-hidden="true">/</span>
           {%- capture url -%}{{ parent.handle | absolute_url }}{%- endcapture -%}
           {{ parent.title | link_to: url}}
         {%- endunless -%}
       {%- endfor -%}
-      <span class="divider" aria-hidden="true">&rsaquo;</span>
+      <span class="divider" aria-hidden="true">/</span>
       <span>{{ collection.title }}</span>
   {%- endif -%}
   {%- elsif template == 'blog' -%}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
     {%- if current_tags -%}
       {%- assign blog_url = blog.url | absolute_url -%}
       {{ blog.title | link_to: blog_url }}
-      <span class="divider" aria-hidden="true">&rsaquo;</span>
+      <span class="divider" aria-hidden="true">/</span>
       <span>{{ current_tags | join: " + " }}</span>
     {%- else -%}
     <span>{{ blog.title }}</span>
     {%- endif -%}
   {%- elsif template == 'article' -%}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
     {%- assign blog_url = blog.url | absolute_url -%}
     {{ blog.title | link_to: blog_url }}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
     <span>{{ article.title }}</span>
   {%- elsif template contains 'page' -%}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
    <span>{{ page.title }}</span>
   {%- else -%}
-    <span class="divider" aria-hidden="true">&rsaquo;</span>
+    <span class="divider" aria-hidden="true">/</span>
    <span>{{ page_title }}</span>
   {%- endif -%}
 </nav>

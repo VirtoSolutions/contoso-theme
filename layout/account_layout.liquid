@@ -22,7 +22,7 @@
 
     {{ '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' | stylesheet_tag }}
     <!--{{ '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css' | stylesheet_tag }}-->
-    
+
     {{ 'bundle/account-styles.css' | static_asset_url | append_version | stylesheet_tag }}
 
      {{ 'ajaxify.scss.css' | asset_url | stylesheet_tag }}
@@ -32,7 +32,7 @@
 
     <base href="{{ '/' | absolute_url }}" />
 
-    {{ 'bundle/scripts_dependencies.js' | static_asset_url | append_version | script_tag }} 
+    {{ 'bundle/scripts_dependencies.js' | static_asset_url | append_version | script_tag }}
     {{ 'bundle/scripts.js' | static_asset_url | append_version | script_tag }}
     {{ 'bundle/account-scripts.js' | static_asset_url | append_version | script_tag }}
 
@@ -71,7 +71,7 @@
                     <product-compare-list-bar></product-compare-list-bar>
                 {% endif %}
                 <a class="has-counter" href="{{ 'cart' | absolute_url }}" ng-controller="cartBarController">
-                    <span class="icon icon-cart"></span>
+                    <span class="icon--cart"></span>
                     <span id="cartCount" ng-class="{ 'visible-count': cartItemsCount > 0 }" ng-bind="cartItemsCount" ng-cloak></span>
                 </a>
             </div>

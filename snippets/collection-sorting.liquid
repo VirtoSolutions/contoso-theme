@@ -1,4 +1,4 @@
-<div class="form-horizontal">
+<!-- <div class="form-horizontal">
   <label for="sortBy" class="small--hide">{{ 'collections.sorting.title' | t }}</label>
   <select name="sortBy" id="sortBy">
     <option value="manual">{{ 'collections.sorting.featured' | t }}</option>
@@ -10,6 +10,38 @@
     <option value="createddate-descending">{{ 'collections.sorting.date_descending' | t }}</option>
     <option value="createddate-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
   </select>
+</div> -->
+<div class="collection-sort">
+    <div class="collection-sort-t">
+        {{ 'collections.sorting.title' | t }}
+        {{ 'images/icon_chevron.svg' | asset_url | img_tag: "Sort by" | class: "collection-icon" }}
+    </div>
+    <div class="collection-menu">
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.featured' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.best_selling' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.az' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.za' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.price_ascending' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.price_descending' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.date_descending' | t }}
+        </div>
+        <div class="collection-menu-item">
+            {{ 'collections.sorting.date_ascending' | t }}
+        </div>
+    </div>
 </div>
 
 <script>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 28.402 0 28.402 19.9999 0 19.9999"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-1271.000000, -1960.000000)">
+            <g id="Group-14" transform="translate(0.000000, 1670.000000)">
+                <g id="Group-13" transform="translate(0.000000, 269.000000)">
+                    <g id="Group-12" transform="translate(1194.000000, 21.000000)">
+                        <g id="Group-3" transform="translate(77.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M11.2427,14.3199 L11.2427,5.7989 L18.6987,10.0589 L11.2427,14.3199 Z M27.8107,3.1949 C27.4557,2.0119 26.5087,0.9469 25.3257,0.7099 C23.0767,-0.0001 14.2007,-0.0001 14.2007,-0.0001 C14.2007,-0.0001 5.3257,-0.0001 3.0767,0.5919 C1.8937,0.9469 0.9467,1.8939 0.5917,3.0769 C-0.0003,5.4439 -0.0003,10.0589 -0.0003,10.0589 C-0.0003,10.0589 -0.0003,14.6739 0.5917,16.9239 C0.9467,18.1059 1.8937,19.1719 3.0767,19.4079 C5.3257,19.9999 14.2007,19.9999 14.2007,19.9999 C14.2007,19.9999 23.0767,19.9999 25.3257,19.4079 C26.5087,19.0529 27.4557,18.1059 27.8107,16.9239 C28.4027,14.6739 28.4027,10.0589 28.4027,10.0589 C28.4027,10.0589 28.4027,5.4439 27.8107,3.1949 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

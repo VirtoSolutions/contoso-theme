@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="173px" height="129px" viewBox="0 0 173 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cart" transform="translate(-655.000000, -269.000000)">
+            <g id="Group-5" transform="translate(655.000000, 269.000000)">
+                <path d="M51.7013571,0 L29.2553571,46.0714286 L0,46.0714286 L9.21428571,129 L119.785714,129 L129,46.0714286 L99.7400357,46.0714286 L77.2986429,0 L51.7013571,0 Z M59.4573936,14 L67.5471614,14 L84,46 L43,46 L59.4573936,14 Z" id="Fill-1" fill="#000000"></path>
+                <circle id="Oval" fill="#4DA0F7" fill-rule="nonzero" cx="121" cy="77" r="52"></circle>
+                <g id="Group-4" transform="translate(98.000000, 53.000000)" font-family="CeraPRO-Black, Cera PRO" font-size="70" font-weight="700" line-spacing="42">
+                    <text id="0" fill="#000000" fill-opacity="0.359912817">
+                        <tspan x="0.5" y="59">0</tspan>
+                    </text>
+                    <text id="0" fill="#FFFFFF">
+                        <tspan x="1" y="56">0</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
