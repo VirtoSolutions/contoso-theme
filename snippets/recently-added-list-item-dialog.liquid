@@ -93,10 +93,12 @@
                 </div>
                 <div class="cart-row">
                     <div class="grid">
-                        <div class="grid-item text-right">
+                        <div class="grid-item one-half text-right">
                             <button ng-click="redirect('{{ 'account#/wishlist' | absolute_url }}')" class="btn" >
                                 <span>{{ 'wishlist.general.view_your_list' | t }}</span>
                             </button>
+                        </div>
+                        <div class="grid-item one-half text-right">
                             <button ng-click="close()" class="btn" >
                                 <span>{{ 'wishlist.general.continue_shopping' | t }}</span>
                             </button>

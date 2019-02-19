@@ -14,4 +14,12 @@ storefrontApp.controller('productListController', ['$scope', '$window', 'pricing
         var productListPricesSize = $scope.getObjectSize($scope.productListPrices);
         $scope.productListPricesLoaded = productListPricesSize > 0;
     });
+
+    $scope.toggleSortOpen = function () {
+        $scope.sortOpened = !$scope.sortOpened;
+    }
+
+    $scope.sortBy = function (sort) {
+        $scope.outerRedirect($window.location.href + '?sort_by=' + sort);
+    }
 }]);

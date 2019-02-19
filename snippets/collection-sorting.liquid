@@ -11,34 +11,34 @@
     <option value="createddate-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
   </select>
 </div> -->
-<div class="collection-sort">
+<div class="collection-sort" ng-class="{ 'opened': sortOpened }" ng-click="toggleSortOpen()">
     <div class="collection-sort-t">
         {{ 'collections.sorting.title' | t }}
         {{ 'images/icon_chevron.svg' | asset_url | img_tag: "Sort by" | class: "collection-icon" }}
     </div>
     <div class="collection-menu">
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('manual')">
             {{ 'collections.sorting.featured' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('best-selling')">
             {{ 'collections.sorting.best_selling' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('title-ascending')">
             {{ 'collections.sorting.az' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('title-descending')">
             {{ 'collections.sorting.za' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('price-ascending')">
             {{ 'collections.sorting.price_ascending' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('price-descending')">
             {{ 'collections.sorting.price_descending' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('createddate-descending')">
             {{ 'collections.sorting.date_descending' | t }}
         </div>
-        <div class="collection-menu-item">
+        <div class="collection-menu-item" ng-click="sortBy('createddate-ascending')">
             {{ 'collections.sorting.date_ascending' | t }}
         </div>
     </div>
